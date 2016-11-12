@@ -9,4 +9,4 @@ add_executable(main largest_series_product.cpp)
 enable_testing()
 add_test(NAME main COMMAND main)
 set_tests_properties( main
-  PROPERTIES PASS_REGULAR_EXPRESSION "Hello, Wordl!")
+  PROPERTIES PASS_REGULAR_EXPRESSION "Hello, World!")
