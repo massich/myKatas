@@ -1,4 +1,5 @@
-int get_zero()
-{
-  return 0;
+#pragma once
+
+namespace largest_series_product{
+  int get_zero();
 }

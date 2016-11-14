@@ -3,7 +3,7 @@
 #include "largest_series_product.h"
 using namespace std::literals;
 
-int largest_series_product::get_zero()
+int main()
 {
-  return 0;
+  std::cout << "Hello, World!\n"s << largest_series_product::get_zero();
 }

@@ -7,9 +7,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(GTest)
 include_directories(${GTEST_INCLUDE_DIRS})
 
-add_executable(main largest_series_product.cpp)
+add_executable( main main.cpp largest_series_product.cpp )
 
-add_executable(runUnitTest largest_series_product_test.cpp)
+add_executable(runUnitTest largest_series_product.cpp largest_series_product_test.cpp)
 target_link_libraries(runUnitTest gtest ${GTEST_LIBRARIES})
 
 enable_testing()

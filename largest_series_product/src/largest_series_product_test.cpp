@@ -3,7 +3,7 @@
 
 TEST (LargestSeriesProductTest, DummyGetZero)
 {
-  ASSERT_EQ (0, get_zero());
+  ASSERT_EQ (0, largest_series_product::get_zero());
 }
 
 int main(int ac, char* av[])
