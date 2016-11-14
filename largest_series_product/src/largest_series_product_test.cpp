@@ -1,9 +1,10 @@
 #include <gtest/gtest.h>
 #include "largest_series_product.h"
+namespace lsp = largest_series_product;
 
 TEST (LargestSeriesProductTest, DummyGetZero)
 {
-  ASSERT_EQ (0, largest_series_product::get_zero());
+  ASSERT_EQ (0, lsp::get_zero());
 }
 
 int main(int ac, char* av[])
