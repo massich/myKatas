@@ -2,9 +2,9 @@
 #include "largest_series_product.h"
 namespace lsp = largest_series_product;
 
-TEST (LargestSeriesProductTest, DummyGetZero)
+TEST (LargestSeriesProductTest, TestLargestProductof2)
 {
-  ASSERT_EQ (0, lsp::get_zero());
+  ASSERT_EQ (72, lsp::largest_product( "0123456789", 2));
 }
 
 int main(int ac, char* av[])

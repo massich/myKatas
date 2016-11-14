@@ -1,5 +1,7 @@
 #pragma once
 
+#include <string>
+
 namespace largest_series_product{
-  int get_zero();
+  int largest_product( std::string const &s, int n);
 }
