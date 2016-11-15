@@ -7,6 +7,11 @@ TEST (LargestSeriesProductTest, TestLargestProductof2)
   ASSERT_EQ (72, lsp::largest_product( "0123456789", 2));
 }
 
+TEST (LargestSeriesProductTest, TestLargestProductof2UnsortedInput)
+{
+  ASSERT_EQ (48, lsp::largest_product("576802143", 2));
+}
+
 int main(int ac, char* av[])
 {
   testing::InitGoogleTest(&ac, av);
