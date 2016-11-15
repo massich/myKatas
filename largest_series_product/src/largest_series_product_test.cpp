@@ -12,7 +12,6 @@ TEST (LargestSeriesProductTest, TestLargestProductof2UnsortedInput)
   ASSERT_EQ (48, lsp::largest_product("576802143", 2));
 }
 
-
 TEST (LargestSeriesProductTest, TestLargestProductof3)
 {
   ASSERT_EQ (504, lsp::largest_product( "0123456789", 3));
