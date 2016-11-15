@@ -62,7 +62,15 @@ TEST (LargestSeriesProductInputTest, TestLargestProductof0)
   ASSERT_EQ (0, lsp::largest_product( "0123456789", 0));
 }
 
+TEST (LargestSeriesProductInputTest, TestNegativeSpan)
+{
+  ASSERT_EQ (0, lsp::largest_product( "0123456789", -1));
+}
 
+TEST (LargestSeriesProductInputTest, TestEmptySeries)
+{
+  ASSERT_EQ (0, lsp::largest_product( "", 2));
+}
 
 int main(int ac, char* av[])
 {
