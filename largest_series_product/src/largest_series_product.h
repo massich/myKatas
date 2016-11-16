@@ -3,5 +3,5 @@
 #include <string>
 
 namespace largest_series_product{
-  int largest_product( std::string const &s, int n);
+  int largest_product( std::string const &s, unsigned int n);
 }
