@@ -1,16 +1,15 @@
 #include <vector>
+#include <functional>
+#include <numeric>
 
 #include "largest_series_product.h"
 
 namespace{
-  int compute_interval_prodcut( std::string const & substring)
+  template <class T>
+  T digit_product(T const i, char const digit_c)
   {
-    int result = 1;
-    for( auto c : substring )
-    {
-      result *= c-'0';
-    }
-    return result;
+    T digit = static_cast<T> ( digit_c - '0');
+    return std::multiplies<T>( i, digit );
   }
 }
 
@@ -22,11 +21,10 @@ int largest_series_product::largest_product(std::string const &s, unsigned int n
 
   for (; serie_right_bound <= s.end(); ++serie_left_bound, ++serie_right_bound)
   {
-    std::string const current_substring( serie_left_bound, serie_right_bound );
-    int const current_value = ::compute_interval_prodcut( current_substring );
-
-    if ( current_value > result )
-      result = current_value;
+    int product = std::accumulate( serie_left_bound, serie_right_bound, 1,
+                                   ::digit_product());
+    if ( product > result )
+      result = product;
   }
   return result;
 }
